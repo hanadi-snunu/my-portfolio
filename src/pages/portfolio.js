@@ -50,7 +50,7 @@ const Portfolio = () => {
             <section className="education-section">
                 <h2>Utbildning</h2>
                 <div className="education-item">
-                    <h3>Campus Mölndals Yrkeshögskola (2023)</h3>
+                    <h3>Campus Mölndals Yrkeshögskola (2024)</h3>
                     <p>Yrkeshögskoleexamen, Javautveckling - Integration</p>
                 </div>
                 <div className="education-item">
