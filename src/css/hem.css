@@ -1,0 +1,20 @@
+/* Bakgrund för Home-sidan */
+.home-background {
+    background: url('C:/Users/Hanad/OneDrive/Skrivebord/Portfolio/my-portfolio/public/background.jpg') no-repeat center center fixed;
+    background-size: 100%;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+   
+  }
+
+  /* För mindre skärmar (mobiler) */
+@media (max-width: 768px) {
+    .home-background {
+        background-size: contain; /* Visa hela bilden på mindre skärmar */
+        background-position: center;
+        background-color: #f5f5f5; /* Lägg till en bakgrundsfärg om det finns utrymme */
+    }
+}

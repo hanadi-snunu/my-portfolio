@@ -1,0 +1,11 @@
+/* Specifik stil för Kontakt-sidan */
+.contact-page {
+    background-color: #e0f7fa;
+    padding: 20px;
+  }
+  
+  .contact-title {
+    font-size: 2rem;
+    color: #00796b;
+  }
+  

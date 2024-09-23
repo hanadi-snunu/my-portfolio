@@ -1,0 +1,215 @@
+/* Importera Belleza typsnitt */
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+/* Allmänna stilar */
+body {
+    font-family: 'Belleza', sans-serif;
+    background-color: #f5f5f5; /* Beige bakgrund */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Portfolio-sidan */
+.portfolio-page {
+    padding: 20px;
+    background-color: #f5f5f5;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.portfolio-header {
+    font-size: 3em;
+    color: #7a7a7a;
+    margin-bottom: 30px;
+    text-align: center;
+    border-bottom: 2px solid #c7b299;
+    padding-bottom: 10px;
+}
+
+/* Sektionerna */
+.intro-section, .skills-section, .education-section, .projects-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Sektionstitlar */
+.intro-section h2, .skills-section h2, .education-section h2, .projects-section h2 {
+    font-size: 2.5em;
+    color: #7a7a7a;
+    border-bottom: 2px solid #c7b299;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Introduktion */
+.intro-section p, .skills-section ul, .education-section div, .projects-section ul {
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Kompetenslistan */
+.skills-section ul {
+    list-style-type: square;
+    padding-left: 20px;
+}
+
+.skills-section ul li {
+    margin-bottom: 10px;
+}
+
+/* Utbildningsavsnitt */
+.education-section .education-item {
+    margin-bottom: 20px;
+}
+
+/* Projektsektion */
+.projects-section .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Anpassat för små skärmar */
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.project-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-left: 4px solid #c7b299;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card h3 {
+    font-size: 1.8em;
+    color: #7a7a7a;
+}
+
+.project-card p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.tech-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tech-list li {
+    background-color: #f0f0f0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin: 5px;
+    font-size: 1em;
+    color: #7a7a7a;
+}
+
+/* Länkar till projekt */
+.project-link {
+    display: block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #c7b299;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #a68a6d;
+}
+
+/* Mobilanpassning */
+@media only screen and (max-width: 768px) {
+    .portfolio-header {
+        font-size: 2em;
+    }
+
+    .intro-section h2, .skills-section h2, .education-section h2, .projects-section h2 {
+        font-size: 2em;
+    }
+
+    .intro-section p, .skills-section ul, .education-section div, .projects-section ul {
+        font-size: 1.1em;
+    }
+
+    /* Layout för mobil: enkel kolumn */
+    .projects-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .portfolio-page {
+        padding: 15px;
+    }
+
+    .project-card {
+        padding: 15px;
+    }
+
+    .project-card h3 {
+        font-size: 1.5em;
+    }
+
+    .project-card p {
+        font-size: 1em;
+    }
+
+    .project-link {
+        padding: 8px 15px;
+    }
+
+    .tech-list li {
+        font-size: 0.9em;
+    }
+
+    .skills-section ul li {
+        margin-bottom: 8px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .portfolio-header {
+        font-size: 1.5em;
+    }
+
+    .intro-section h2, .skills-section h2, .education-section h2, .projects-section h2 {
+        font-size: 1.5em;
+    }
+
+    .intro-section p, .skills-section ul, .education-section div, .projects-section ul {
+        font-size: 1em;
+    }
+
+    .project-card h3 {
+        font-size: 1.3em;
+    }
+
+    .project-link {
+        padding: 5px 10px;
+    }
+
+    .tech-list li {
+        font-size: 0.8em;
+    }
+
+    .skills-section ul li {
+        margin-bottom: 5px;
+    }
+}
