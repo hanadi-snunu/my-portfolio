@@ -31,7 +31,7 @@ body {
 }
 
 /* Sektionerna */
-.intro-section, .skills-section, .education-section, .projects-section {
+.intro-section, .skills-section, .education-section, .projects-section, .experience-section {
     margin-bottom: 40px;
     padding: 20px;
     background-color: #ffffff;
@@ -39,8 +39,37 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
+.intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.intro-content {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.intro-image {
+    width: 190px;
+    height: 235px;
+    border-radius: 10px; /* Gör bilden rund */
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lägg till en lätt skugga */
+}
+
+.intro-section p {
+    max-width: 470px;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+    margin-bottom: 10;
+}
+
 /* Sektionstitlar */
-.intro-section h2, .skills-section h2, .education-section h2, .projects-section h2 {
+.intro-section h2, .skills-section h2, .education-section h2, .projects-section h2, .experience-section h2 {
     font-size: 2.5em;
     color: #7a7a7a;
     border-bottom: 2px solid #c7b299;
@@ -49,8 +78,9 @@ body {
     text-align: center;
 }
 
+
 /* Introduktion */
-.intro-section p, .skills-section ul, .education-section div, .projects-section ul {
+.intro-section p, .skills-section ul, .education-section div, .projects-section ul, .experience-section div {
     font-size: 1.2em;
     line-height: 1.6;
     color: #666;
@@ -142,12 +172,16 @@ body {
         font-size: 2em;
     }
 
-    .intro-section h2, .skills-section h2, .education-section h2, .projects-section h2 {
+    .intro-section h2, .skills-section h2, .education-section h2, .projects-section h2, .experience-section h2 {
         font-size: 2em;
     }
 
-    .intro-section p, .skills-section ul, .education-section div, .projects-section ul {
+    .intro-section p, .skills-section ul, .education-section div, .projects-section ul, .experience-section ul {
         font-size: 1.1em;
+    }
+
+    .intro-content {
+        flex-direction: column; 
     }
 
     /* Layout för mobil: enkel kolumn */

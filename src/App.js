@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Route, Routes, useLocation } from 'react-router-dom';
 import Sidebar from './components/sidebar';
 import Footer from './components/footer';
+import Header from './components/header';
 import Home from './pages/hem';
 import Portfolio from './pages/portfolio';
 import Kontakt from './pages/kontakt';

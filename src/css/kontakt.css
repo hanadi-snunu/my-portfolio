@@ -2,11 +2,12 @@
 
 /* Grundläggande stil för Kontakt-sidan */
 .contact-page {
-    background-color: #f7f6f2; /* Ljus beige för bakgrunden */
+    background-color: #fff; /* Ljus beige för bakgrunden */
     padding: 40px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    animation: fade-in 1s ease-in forwards;
 }
 
 .contact-title {

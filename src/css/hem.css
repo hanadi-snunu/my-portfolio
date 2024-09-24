@@ -1,6 +1,6 @@
 /* Bakgrund för Home-sidan */
 .home-background {
-    background: url('C:/Users/Hanad/OneDrive/Skrivebord/Portfolio/my-portfolio/public/background.jpg') no-repeat center center fixed;
+    background: url('C:/Users/Hanad/OneDrive/Skrivebord/Portfolio/my-portfolio/public/imaage.jpg') no-repeat center center fixed;
     background-size: 100%;
     background-position: center;
     height: 100vh;
@@ -18,3 +18,4 @@
         background-color: #f5f5f5; /* Lägg till en bakgrundsfärg om det finns utrymme */
     }
 }
+

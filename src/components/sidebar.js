@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
+
 function Sidebar() {
 
     const [isOpen, setIsOpen] = useState(false);
@@ -21,7 +22,7 @@ function Sidebar() {
     return (
         <>
       {/* Hamburger meny */}
-      <div className="hamburger-menu" onClick={toggleSidebar}>
+      <div className={`hamburger-menu ${isOpen ? 'open' : ''}`} onClick={toggleSidebar}>
         <div className="bar"></div>
         <div className="bar"></div>
         <div className="bar"></div>
@@ -38,7 +39,7 @@ function Sidebar() {
             </li>
             <li>
               <NavLink to="/portfolio" className="link-button" activeClassName="active"  onClick={closeSidebarOnMobile}>
-                <i className="fas fa-briefcase"></i> Portfölj
+                <i className="fas fa-briefcase"></i> Om Mig
               </NavLink>
             </li>
             <li>
@@ -46,11 +47,11 @@ function Sidebar() {
                 <i className="fas fa-envelope"></i> Kontakt
               </NavLink>
             </li>
-            <li>
+           {/* <li>
               <NavLink to="/information" className="link-button" activeClassName="active"  onClick={closeSidebarOnMobile}>
                 <i className="fas fa-info-circle"></i> Information
               </NavLink>
-            </li>
+            </li>*/}
           </ul>
         </nav>
       </aside>
