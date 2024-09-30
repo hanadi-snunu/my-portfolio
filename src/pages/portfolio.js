@@ -2,9 +2,11 @@ import React from 'react';
 import '../css/portfolio.css'; // CSS-filen för designen
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTools, faGraduationCap, faProjectDiagram, faBriefcase } from '@fortawesome/free-solid-svg-icons';
-
+import { motion } from 'framer-motion';
 
 const Portfolio = () => {
+
+
     // Data för Gladpedagog-projektet
     const projects = [
         {
@@ -19,11 +21,23 @@ const Portfolio = () => {
 
     return (
         <div className="portfolio-page">
-            <h1 className="portfolio-header">Vem är Hanadi?</h1>
+             <motion.h1 
+                className="portfolio-header" 
+                initial={{ opacity: 0 }} 
+                animate={{ opacity: 1 }} 
+                transition={{ duration: 1 }}
+            >
+                Vem är Hanadi?
+            </motion.h1>
 
             {/* Introduktion */}
-            <section className="intro-section">
-            <div className="intro-content">
+            <motion.section 
+                className="intro-section" 
+                initial={{ opacity: 0, y: 50 }} 
+                animate={{ opacity: 1, y: 0 }} 
+                transition={{ duration: 1 }}
+            >
+                <div className="intro-content">
                     <img src="/omMig.jpg" alt="Om mig" className="intro-image" />
                     <p>
                         Jag studerar till Javautvecklare med inriktning integration och blir färdigutbildad 1 november 2024. 
@@ -31,10 +45,15 @@ const Portfolio = () => {
                         Jag har erfarenhet av att utveckla backend-lösningar i Java och C#.NET, samt frontend-utveckling med JavaScript och React.
                     </p>
                 </div>
-            </section>
+                </motion.section>
 
             {/* Arbetslivserfarenhet */}
-            <section className="experience-section">
+            <motion.section 
+                className="experience-section" 
+                initial={{ opacity: 0, x: -50 }} 
+                whileInView={{ opacity: 1, x: 0 }} 
+                transition={{ duration: 1 }}
+            >
                 <h2>Arbetslivserfarenhet <FontAwesomeIcon icon={faBriefcase} /></h2>
                 <div className="experience-item">
                     <h3>Hemtjänstkoordinator (2016 - 2024)</h3>
@@ -43,10 +62,15 @@ const Portfolio = () => {
                         Jag hade även ansvar för att samordna och förbättra arbetsflöden, där jag tillämpade arbetsmetoder som påminner om Scrum för att optimera teamarbete och effektivitet.
                     </p>
                 </div>
-            </section>
+            </motion.section>
 
             {/* Kompetenser */}
-            <section className="skills-section">
+            <motion.section 
+                className="skills-section" 
+                initial={{ opacity: 0, x: 50 }} 
+                whileInView={{ opacity: 1, x: 0 }} 
+                transition={{ duration: 1 }}
+            >
                 <h2> Kompetenser <FontAwesomeIcon icon={faTools} /></h2>
                 <ul>
                     <li>Objektorienterad programmering</li>
@@ -61,10 +85,15 @@ const Portfolio = () => {
                     <li>Arbetssätt: Scrum</li>
                     <li>Språk: Flytande svenska och arabiska, god engelska i tal och skrift</li>
                 </ul>
-            </section>
+            </motion.section>
 
             {/* Utbildning */}
-            <section className="education-section">
+            <motion.section 
+                className="education-section" 
+                initial={{ opacity: 0, y: 50 }} 
+                whileInView={{ opacity: 1, y: 0 }} 
+                transition={{ duration: 1 }}
+            >
                 <h2>Utbildning <FontAwesomeIcon icon={faGraduationCap} /> </h2>
                 <div className="education-item">
                     <h3>Campus Mölndals Yrkeshögskola (2024)</h3>
@@ -74,14 +103,25 @@ const Portfolio = () => {
                     <h3>Pauliskolan (2013)</h3>
                     <p>Gymnasieexamen, Samhällsprogrammet inriktning samhälle</p>
                 </div>
-            </section>
+            </motion.section>
 
             {/* Projekt */}
-            <section className="projects-section">
+            <motion.section 
+                className="projects-section" 
+                initial={{ opacity: 0, y: 50 }} 
+                whileInView={{ opacity: 1, y: 0 }} 
+                transition={{ duration: 1 }}
+            >
                 <h2>Projekt <FontAwesomeIcon icon={faProjectDiagram} /></h2>
                 <div className="projects-grid">
                     {projects.map((project, index) => (
-                        <div key={index} className="project-card">
+                        <motion.div 
+                            key={index} 
+                            className="project-card"
+                            initial={{ opacity: 0, scale: 0.8 }}
+                            whileInView={{ opacity: 1, scale: 1 }}
+                            transition={{ duration: 0.8 }}
+                        >
                             <h3>{project.title}</h3>
                             <p>{project.description}</p>
                             <ul className="tech-list">
@@ -94,10 +134,10 @@ const Portfolio = () => {
                                 <a href={project.frontendLink} target="_blank" rel="noopener noreferrer" className="project-link">Frontend på GitHub</a>
                                 <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="project-link">Live-sida</a>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
-            </section>
+            </motion.section>
         </div>
     );
 };

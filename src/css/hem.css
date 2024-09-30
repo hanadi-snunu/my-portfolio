@@ -10,12 +10,25 @@
    
   }
 
-  /* För mindre skärmar (mobiler) */
+  /* Titel-stil */
+.home-title {
+    font-size: 3rem;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+/* För mindre skärmar (mobiler) */
 @media (max-width: 768px) {
     .home-background {
         background-size: contain; /* Visa hela bilden på mindre skärmar */
         background-position: center;
         background-color: #f5f5f5; /* Lägg till en bakgrundsfärg om det finns utrymme */
     }
-}
 
+    .home-title {
+        font-size: 2rem; /* Mindre textstorlek för mobiler */
+    }
+}
