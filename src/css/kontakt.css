@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+
+/* Grundläggande stil för Kontakt-sidan */
+.contact-page {
+    background-color: #fff; /* Ljus beige för bakgrunden */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    animation: fade-in 1s ease-in forwards;
+}
+
+.contact-title {
+    font-family: 'Belleza', sans-serif;
+    font-size: 2.5rem;
+    color: #5f6368; /* Mörkare grå för rubriken */
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+.contact-description {
+    font-family: 'Belleza', sans-serif;
+    font-size: 1.2rem;
+    color: #6d6d6d;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Formuläret får en beige bakgrund och mörkare accenter */
+.contact-form {
+    background-color: #e8e4da; /* Beige bakgrund för formuläret */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 100px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-family: 'Belleza', sans-serif;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Belleza', sans-serif;
+    font-size: 1rem;
+    background-color: #f2f2f2; /* Ljusgrå fält */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #b0b0b0;
+    background-color: #fff;
+    outline: none;
+}
+
+/* Beiga detaljer för knapparna */
+.submit-button {
+    font-family: 'Belleza', sans-serif;
+    background-color: #7f867e; /* Ljusbeige/mörk beige för knappen */
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 1.1rem;
+}
+
+.submit-button:hover {
+    background-color: #979d96; /* Ljusare beige vid hover */
+}
+
+/* För mobilanpassning */
+@media (max-width: 768px) {
+    .contact-page {
+        padding: 20px;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    .submit-button {
+        width: 100%;
+        padding: 15px;
+        font-size: 1rem;
+    }
+}

@@ -1,0 +1,11 @@
+/* Specifik stil för Information-sidan */
+.information-page {
+    background-color: #fff3e0;
+    padding: 20px;
+  }
+  
+  .information-title {
+    font-size: 2rem;
+    color: #ff5722;
+  }
+  
