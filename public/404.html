@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta http-equiv="refresh" content="0; URL=/" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
     <script type="text/javascript">
-        // Om det är en Single Page Application (SPA), omdirigera till index.html
-        var path = window.location.pathname;
-        window.location.replace(window.location.origin + '/?' + path);
+        var path = window.location.pathname;  // Hämta den aktuella sökvägen
+        var newUrl = window.location.origin + "/portfolio" + path;  // Lägg till /portfolio innan pathname
+        window.location.replace(newUrl);  // Omdirigera till den nya URL:en
     </script>
 </head>
 <body>
