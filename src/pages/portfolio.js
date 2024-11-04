@@ -123,7 +123,7 @@ const Portfolio = () => {
                     <li>API-utveckling</li>
                     <li>Verktyg: Figma, Miro, Trello</li>
                     <li>Arbetssätt: Scrum</li>
-                    <li>Språk: Flytande svenska och arabiska, god engelska i tal och skrift</li>
+                    <li>Språk: Flytande svenska och arabiska, god engelska och danska i tal och skrift</li>
                     <li>Pågående kurs: Fördjupning i relationsdatabaser </li>
                     <li>Pågående kurs: Prompt Engineering och generativ AI </li>
                 </ul>
