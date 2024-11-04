@@ -1,5 +1,8 @@
 /* Importera Belleza typsnitt */
 @import url('https://fonts.googleapis.com/css2?family=Belleza&display=swap');
+@import "~slick-carousel/slick/slick.css"; 
+@import "~slick-carousel/slick/slick-theme.css";
+
 
 /* Allmänna stilar */
 body {
@@ -59,6 +62,18 @@ body {
     object-fit: cover;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Lägg till en lätt skugga */
 }
+.project-slider {
+    width: 100%;
+    max-width: 500px; /* Justera maxbredd efter behov */
+    margin: 20px auto;
+}
+
+.slider-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rundar kanterna för en snyggare look */
+}
+
 
 .intro-section p {
     max-width: 470px;
@@ -116,6 +131,7 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
     border-left: 4px solid #c7b299;
+    overflow: hidden;
 }
 
 .project-card:hover {
@@ -184,17 +200,23 @@ body {
         flex-direction: column; 
     }
 
-    /* Layout för mobil: enkel kolumn */
-    .projects-grid {
-        grid-template-columns: 1fr;
+   
+     /* Layout för mobil: enkel kolumn */
+     .projects-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 15px; /* Mindre gap mellan projektkort */
     }
-
     .portfolio-page {
         padding: 15px;
     }
 
     .project-card {
         padding: 15px;
+        margin: 0 auto; /* Centrerar projektkorten */
+        width: calc(100% - 30px); /* Justerar bredden för att passa inom skärmen */
+        box-sizing: border-box; /* Ser till att padding inkluderas i bredden */
+        max-width: 500px; 
     }
 
     .project-card h3 {
@@ -203,10 +225,15 @@ body {
 
     .project-card p {
         font-size: 1em;
+        margin-bottom: 10px;
     }
 
     .project-link {
         padding: 8px 15px;
+    }
+    .tech-list {
+        gap: 5px;
+        font-size: 0.9em;
     }
 
     .tech-list li {
@@ -216,6 +243,8 @@ body {
     .skills-section ul li {
         margin-bottom: 8px;
     }
+
+
 }
 
 @media only screen and (max-width: 480px) {
@@ -234,6 +263,10 @@ body {
     .project-card h3 {
         font-size: 1.3em;
     }
+    .project-card {
+        width: calc(100% - 20px); /* Mindre marginal på sidorna för extra smala skärmar */
+    }
+
 
     .project-link {
         padding: 5px 10px;
@@ -241,9 +274,11 @@ body {
 
     .tech-list li {
         font-size: 0.8em;
+        padding: 4px 8px;
     }
 
     .skills-section ul li {
         margin-bottom: 5px;
     }
+
 }
