@@ -150,7 +150,7 @@ const Portfolio = () => {
                     <p>Gymnasieexamen, Samhällsprogrammet inriktning samhälle</p>
                 </div>
 
-                nackademin
+            
             </motion.section>
 
             {/* Projekt */}
