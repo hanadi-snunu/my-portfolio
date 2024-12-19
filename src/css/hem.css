@@ -1,6 +1,6 @@
 /* Bakgrund för Home-sidan */
 .home-background {
-    background: linear-gradient(135deg, #f9e4d4, #f5c6c0);
+    
     background-size: 100%;
     background-position: center;
     height: 100vh;
@@ -14,7 +14,7 @@
 .home-title {
     font: 60px "Old Standard TT", serif;
     color: #666666;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    
     margin: 0;
     padding: 20px;
     text-align: center;
@@ -28,7 +28,7 @@
     margin: 0 auto; /* Centrerar elementet horisontellt */
     padding: 10px 20px; /* Lägger till lite padding på sidorna för bättre läsbarhet */
     max-width: 60%; /* Minskar bredden för att komprimera texten mer */
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    
     line-height: 1.4; /* Minskad line-height för mer kompakt text */
 }
 

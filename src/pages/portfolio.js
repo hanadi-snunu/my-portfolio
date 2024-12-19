@@ -28,9 +28,10 @@ const Portfolio = () => {
 
         {
             title: "HOUSE OF AESTHETICS",
-            description: "Detta pågående projekt är utformat för en klinik där kunder kan läsa om behandlingar, se priser, boka tider och hitta rätt behandling baserat på sina behov. Sidan erbjuder också kontaktmöjligheter och anmälan till klinikens utbildningar. Projektet är inte färdigt, men här är ett utkast av bilder och funktioner.",
+            description: "Detta pågående projekt är utformat för en klinik där kunder kan läsa om behandlingar, se priser, boka tider och hitta rätt behandling baserat på sina behov. Sidan erbjuder också kontaktmöjligheter och anmälan till klinikens utbildningar. Projektet är inte färdigt, men här är ett utkast av bilder och demo.",
             technologies: ["JavaScript", "React", "CSS", "HTML"],
-            images: [image1, image2, image3, image4, image5, image6]
+            images: [image1, image2, image3, image4, image5, image6],
+            websiteLink: "https://houseofaesthetics.se" 
         }
     ];
 
@@ -177,6 +178,9 @@ const Portfolio = () => {
                                     <li key={i}>{tech}</li>
                                 ))}
                             </ul>
+                            {project.websiteLink && (
+                <a href={project.websiteLink} target="_blank" rel="noopener noreferrer" className="project-link">Besök hemsidan</a>
+            )}
                             {project.images && (
                                 <Slider {...sliderSettings} className="project-slider">
                                     {project.images.map((image, i) => (
@@ -195,6 +199,7 @@ const Portfolio = () => {
                             {project.liveLink && (
                                 <a href={project.liveLink} target="_blank" rel="noopener noreferrer" className="project-link">Live-sida</a>
                             )}
+                            
                         </motion.div>
                     ))}
                 </div>
